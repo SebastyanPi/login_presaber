@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 Route::get('/intesa@admin/8G4oT5nqh4Q3M47', [App\Http\Controllers\RoutesController::class, 'register'])->name('register.student');
 
